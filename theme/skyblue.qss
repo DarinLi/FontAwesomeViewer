@@ -1,0 +1,214 @@
+/***********Qt CustomStytle ************/
+
+/**********Main Widget Stytle**********/
+QWidget#MainWidgetUI {
+	background: rgb(240, 241, 245);
+}
+
+/**********About Widget Stytle**********/
+QWidget#AboutWidgetUI {
+	background: rgb(240, 241, 245);
+}
+
+/**********Content Widget Stytle**********/
+QWidget#ContentWidget {
+	background: white;
+}
+
+/**********TitleBar Stytle**********/
+QWidget#titlebar {
+	background: rgb(57, 197, 187);
+}
+
+/**********TitleBar Label Stytle**********/
+QLabel#titlelabel {
+	color: white;
+	/*qproperty-text: "Simple Frameless Window Demo";*/
+}
+
+/**********按钮**********/
+QToolButton#minbutton,QToolButton#maxbutton {
+	color:lightgray;
+	background-color:transparent;
+}
+QToolButton#closebutton {
+	color:lightgray;
+	background-color:transparent;
+}
+QToolButton#minbutton:hover,QToolButton#maxbutton:hover,QToolButton#closebutton:hover{
+    color:white;
+}
+QToolButton#minbutton:pressed,QToolButton#maxbutton:pressed,QToolButton#closebutton:pressed{
+    color:white;
+}
+
+QToolButton#menubutton {
+	color:lightgray;
+	background-color:transparent;
+}
+QToolButton#menubutton:hover{
+    color:white;
+}
+QToolButton#menubutton:pressed{
+    color:white;
+}
+QToolButton#menubutton::menu-indicator {
+    image: none;
+}
+
+/**********按钮**********/
+QPushButton{
+    background:transparent;
+	color: rgb(66, 66, 66);
+}
+QPushButton:hover{
+    color: rgb(100, 220, 220);
+}
+QPushButton:pressed{
+    color: rgb(57, 197, 187);
+}
+QPushButton:checked{
+    color: rgb(57, 197, 187);
+}
+
+QPushButton#closeButton {
+    border-radius: 4px;
+    border: none;
+}
+QPushButton#closeButton:enabled {
+    background: rgb(57, 197, 187);
+    color: white;
+}
+QPushButton#closeButton:!enabled {
+    background: rgb(180, 180, 180);
+    color: white;
+}
+QPushButton#closeButton:enabled:hover{
+    background: rgb(45, 175, 165);
+}
+QPushButton#closeButton:enabled:pressed{
+    background: rgb(30, 160, 150);
+}
+
+/**********标签**********/
+QLabel {
+    color: rgb(2, 65, 132);
+}
+
+QLabel#IconLabelShow {
+	border: 1px solid rgb(57, 197, 187);
+	color: rgb(33, 33, 33);
+}
+
+/**********菜单***********/
+QMenu {
+    /*font: Normal;*/
+    /*border: 1px solid rgb(100, 100, 100);*/
+	border: 1px solid transparent;
+    background: rgb(240, 241, 245);
+}
+QMenu::item {
+    height: 22px;
+    padding: 2px 20px 2px 25px;
+}
+QMenu::item:enabled {
+    color: rgb(33, 33, 33);
+}
+QMenu::item:!enabled {
+    color: rgb(155, 155, 155);
+}
+QMenu::item:enabled:selected {
+    color: black;
+    background: rgba(100, 220, 220, 90);
+}
+QMenu::separator {
+    height: 1px;
+    background: rgb(57, 197, 187);
+}
+QMenu::indicator {
+    width: 13px;
+    height: 13px;
+}
+QMenu::icon {
+    padding-left: 1px;
+    padding-right: 1px;
+}
+
+/**********滚动条-垂直**********/
+QScrollBar:vertical {
+        width: 10px;
+        background: transparent;
+        margin-left: 0px;
+        margin-right: 0px;
+}
+QScrollBar::handle:vertical {
+        min-height: 30px;
+        background: rgb(100, 220, 220);
+        margin-top: 12px;
+        margin-bottom: 12px;
+        border:1px solid transparent;
+        border-radius:5px;
+}
+QScrollBar::handle:vertical:hover {
+        background: rgb(57, 197, 187);
+}
+QScrollBar::sub-line:vertical {
+        height: 15px;
+        background: transparent;
+        image: url(./theme/white/topArrow.png);
+        subcontrol-position: top;
+}
+QScrollBar::add-line:vertical {
+        height: 15px;
+        background: transparent;
+        image: url(./theme/white/bottomArrow.png);
+        subcontrol-position: bottom;
+}
+QScrollBar::sub-line:vertical:hover {
+        background: rgb(100, 220, 220);
+}
+QScrollBar::add-line:vertical:hover {
+        background: rgb(100, 220, 220);
+}
+QScrollBar::add-page:vertical, QScrollBar::sub-page:vertical {
+        background: transparent;
+}
+
+/**********输入框**********/
+QLineEdit#CodeLineEditShow {
+    border-radius: 4px;
+    border: 1px solid rgb(57, 197, 187);
+    background: white;
+    color: rgb(254, 67, 101);
+	font: bold;
+	selection-color: white;
+	selection-background-color: rgb(0, 160, 230);
+}
+
+/**********文本编辑框**********/
+QTextEdit#updataContentTextEdit {
+    border: 1px solid rgb(57, 197, 187);
+    color: rgb(66, 66, 66);
+    background: white;
+	selection-color: white;
+	selection-background-color: rgb(0, 160, 230);
+}
+
+QTextEdit#NameLineEditShow {
+    border-radius: 4px;
+    border: 1px solid rgb(57, 197, 187);
+    background: white;
+    color: rgb(254, 67, 101);
+	font: bold;
+	selection-color: white;
+	selection-background-color: rgb(0, 160, 230);
+}
+
+/**********提示框**********/
+ QToolTip {
+    border: 1px solid rgb(57, 197, 187);
+    border-radius: 5px;
+    padding: 5px;
+	background-color: white;
+	color: rgb(33, 33, 33);
+  }
